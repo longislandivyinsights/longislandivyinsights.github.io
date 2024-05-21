@@ -25,8 +25,6 @@ const whenExternalScripts = (items = []) =>
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  site: 'https://CollegeCoaches.github.io',
-  // base: '',
   output: 'static',
 
   integrations: [
