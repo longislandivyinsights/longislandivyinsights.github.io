@@ -1,67 +1,67 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'About Us',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Who We Are',
+          href: '#',
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'Meet Our Team',
+          href: '#',
         },
       ],
     },
     {
-      text: 'Pages',
+      text: 'Course Tutoring',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
+          text: 'High School Coursework',
+          href: '#',
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: 'Standardized Testing',
+          href: '#',
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
+          text: 'AP Coursework',
+          href: '#',
         },
         {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          text: 'College Coursework',
+          href: '#',
         },
       ],
     },
     {
-      text: 'Widgets',
+      text: 'College Application Coaching',
+      links: [
+        {
+          text: 'College Essay Editing',
+          href: '#',
+        },
+        {
+          text: 'Application Review',
+          href: '#',
+        },
+        {
+          text: 'Resume Review',
+          href: '#',
+        },
+      ],
+    },
+    {
+      text: 'College Planning Workshops',
+      href: '#',
+    },
+    {
+      text: 'Contact Us',
       href: '#',
     },
   ],
-  // actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
@@ -112,18 +112,16 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
+    { text: 'Terms of Service', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
     <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    © ${new Date().getFullYear()}, CollegeCoaches · All rights reserved.
   `,
 };
