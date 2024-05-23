@@ -1,4 +1,5 @@
 import { getPermalink } from './utils/permalinks';
+import thirtyTwo from '~/assets/favicons/favicon-32x32.png';
 
 export const headerData = {
   links: [
@@ -121,7 +122,7 @@ export const footerData = {
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
   ],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
+    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="${thirtyTwo.src}" alt="CollegeCoaches logo" loading="lazy"></img>
     © ${new Date().getFullYear()} CollegeCoaches · All rights reserved.
   `,
 };

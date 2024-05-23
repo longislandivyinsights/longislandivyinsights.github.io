@@ -16,28 +16,31 @@ const metadata = {
     actions={[
       {
         text: 'College Consulting',
-        href: '#college-consulting'
+        href: '#college-consulting',
       },
       {
         text: 'Course Tutoring',
-        href: '#course-tutoring'
+        href: '#course-tutoring',
       },
       // TODO: MAYBE INSERT AN IMAGE HERE
     ]}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight">College Consulting</span> + <span class="text-accent dark:text-white highlight">Course Tutoring</span>
+      <span class="text-accent dark:text-white highlight">College Consulting</span> + <span
+        class="text-accent dark:text-white highlight">Course Tutoring</span
+      >
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="font-semibold">CollegeCoaches</span> is a consulting and tutoring service run by college students. We help students excel in their classes and earn admission into top schools!
+      <span class="font-semibold">CollegeCoaches</span> is a consulting and tutoring service run by college students. We
+      help students excel in their classes and earn admission into top schools!
     </Fragment>
   </Hero>
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    id= "college-consulting"
+    id="college-consulting"
     title="College applications from start to finish."
     items={[
       {
@@ -73,22 +76,25 @@ const metadata = {
 
   <Steps
     isReversed
-    id= "course-tutoring"
+    id="course-tutoring"
     title="Tutoring for all high school courses."
     items={[
       {
         title: 'Step 1: <span class="font-medium">Assessment</span>',
-        description: "We'll assess your current understanding of the subject and identify areas where you need help. We'll also help you set goals and create a study plan.",
+        description:
+          "We'll assess your current understanding of the subject and identify areas where you need help. We'll also help you set goals and create a study plan.",
         icon: 'tabler:clipboard-list',
       },
       {
         title: 'Step 2: <span class="font-medium">Teaching</span>',
-        description: "We'll teach you the material you need to know and help you practice solving problems. We'll explain concepts, provide examples, and answer your questions.",
+        description:
+          "We'll teach you the material you need to know and help you practice solving problems. We'll explain concepts, provide examples, and answer your questions.",
         icon: 'tabler:book',
       },
       {
         title: 'Step 3: <span class="font-medium">Review</span>',
-        description: "We'll review the material you've learned and help you prepare for tests and exams. We'll quiz you on key concepts, test your understanding, and provide feedback on your performance.",
+        description:
+          "We'll review the material you've learned and help you prepare for tests and exams. We'll quiz you on key concepts, test your understanding, and provide feedback on your performance.",
         icon: 'tabler:checklist',
       },
       {
