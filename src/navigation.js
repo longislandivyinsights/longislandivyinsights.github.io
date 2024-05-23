@@ -60,7 +60,7 @@ export const headerData = {
     },
     {
       text: 'Contact Us',
-      href: '#',
+      href: getPermalink('/contact'),
     },
   ],
 };
