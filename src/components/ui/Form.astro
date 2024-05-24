@@ -1,11 +1,18 @@
 ---
 import type { Form as Props } from '~/types';
 import Button from '~/components/ui/Button.astro';
+import { getCanonical } from '~/utils/permalinks';
 
-const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } = Astro.props;
+const { inputs, textarea, disclaimer, button = 'Send Message', description = '' } = Astro.props;
 ---
 
-<form>
+<form action="https://api.staticforms.xyz/submit" method="POST">
+  <input type="hidden" name="accessKey" value="d72423f8-f8ff-4a34-8cb6-e8d787dbac06" />
+  <input type="text" name="honeypot" style="display: none;" />
+  <input type="hidden" name="subject" value="Email from CollegeCoaches Website" />
+  <input type="hidden" name="replyTo" value="@" />
+  <input type="hidden" name="redirectTo" value={getCanonical('/contact').toString()} />
+
   {
     inputs &&
       inputs.map(
@@ -56,7 +63,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
         <div class="flex mt-0.5">
           <input
             id="disclaimer"
-            name="disclaimer"
+            name="$disclaimer"
             type="checkbox"
             required
             class="cursor-pointer mt-1 py-3 px-4 block text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"

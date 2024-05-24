@@ -21,61 +21,61 @@ const metadata = {
     inputs={[
       {
         type: 'text',
-        name: 'parentFirstName',
+        name: '$parentFirstName',
         label: 'Parent First Name',
         required: true,
       },
       {
         type: 'text',
-        name: 'parentLastName',
+        name: '$parentLastName',
         label: 'Parent Last Name',
         required: true,
       },
       {
         type: 'email',
-        name: 'parentEmail',
+        name: 'email',
         label: 'Parent Email',
         required: true,
       },
       {
         type: 'tel',
-        name: 'parentCell',
+        name: '$parentCell',
         label: 'Parent Cell Phone',
         required: true,
       },
       {
         type: 'text',
-        name: 'studentFirstName',
+        name: '$studentFirstName',
         label: 'Student First Name',
         required: true,
       },
       {
         type: 'text',
-        name: 'studentLastName',
+        name: '$studentLastName',
         label: 'Student Last Name',
         required: true,
       },
       {
         type: 'email',
-        name: 'studentEmail',
+        name: '$studentEmail',
         label: 'Student Email',
         required: false,
       },
       {
         type: 'tel',
-        name: 'studentCell',
+        name: '$studentCell',
         label: 'Student Cell Phone',
         required: false,
       },
       {
         type: 'text',
-        name: 'studentSchool',
+        name: '$studentSchool',
         label: 'Student High School',
         required: true,
       },
       {
         type: 'number',
-        name: 'studentGradYear',
+        name: '$studentGradYear',
         label: 'Student Graduation Year',
         required: true,
       },
@@ -95,12 +95,6 @@ const metadata = {
   <Features2
     title="We are here to help!"
     items={[
-      {
-        title: 'Phone',
-        // TODO: Insert phone number here
-        description: '+1 (123) 456-7890',
-        icon: 'tabler:headset',
-      },
       {
         title: 'Email',
         description: 'collegecoacheshs@gmail.com',

@@ -36,7 +36,7 @@ export const headerData = {
           href: '#',
         },
         {
-          text: 'Essay Editing',
+          text: 'Essay Review',
           href: '#',
         },
         {
