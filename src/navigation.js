@@ -5,16 +5,7 @@ export const headerData = {
   links: [
     {
       text: 'About Us',
-      links: [
-        {
-          text: 'Who We Are',
-          href: '#',
-        },
-        {
-          text: 'Meet Our Team',
-          href: '#',
-        },
-      ],
+      href: getPermalink('/about'),
     },
     {
       text: 'Course Tutoring',
@@ -38,10 +29,14 @@ export const headerData = {
       ],
     },
     {
-      text: 'College Application Coaching',
+      text: 'College Applications',
       links: [
         {
-          text: 'College Essay Editing',
+          text: 'Planning',
+          href: '#',
+        },
+        {
+          text: 'Essay Editing',
           href: '#',
         },
         {
@@ -53,10 +48,6 @@ export const headerData = {
           href: '#',
         },
       ],
-    },
-    {
-      text: 'College Planning Workshops',
-      href: '#',
     },
     {
       text: 'Contact Us',
