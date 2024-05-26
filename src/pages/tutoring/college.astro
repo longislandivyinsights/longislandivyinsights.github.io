@@ -1,0 +1,48 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'College Coursework',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="College Coursework"
+    image={{
+      src: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'TODO: Add alt text',
+    }}
+    actions={[
+      {
+        text: 'Courses We Offer',
+        href: '#courses',
+      },
+    ]}
+  >
+    <Fragment slot="title"> Excel in College Classes </Fragment>
+
+    <Fragment slot="subtitle">
+      Taking college courses while in high school can be a great way to challenge yourself and get a head start on your
+      college education. We offer tutoring in a variety of college subjects to help you excel in your coursework and
+      prepare for the challenges of higher education.
+    </Fragment>
+  </Hero>
+
+  <Features2
+    id="courses"
+    title="College Coursework"
+    subtitle="Our tutors are proficient in a variety of college subjects and can help you excel in your coursework. Please contact us for more information on the college subjects we offer tutoring in."
+    columns={3}
+    tagline="Courses We Offer"
+    items={[]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+</Layout>

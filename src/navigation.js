@@ -12,19 +12,19 @@ export const headerData = {
       links: [
         {
           text: 'High School Coursework',
-          href: '#',
+          href: getPermalink('/tutoring/high-school'),
         },
         {
           text: 'Standardized Testing',
-          href: '#',
+          href: getPermalink('/tutoring/testing'),
         },
         {
           text: 'AP Coursework',
-          href: '#',
+          href: getPermalink('/tutoring/advanced-placement'),
         },
         {
           text: 'College Coursework',
-          href: '#',
+          href: getPermalink('/tutoring/college'),
         },
       ],
     },
@@ -33,19 +33,19 @@ export const headerData = {
       links: [
         {
           text: 'Planning',
-          href: '#',
+          href: getPermalink('/college/planning'),
         },
         {
           text: 'Essay Review',
-          href: '#',
+          href: getPermalink('/college/essay'),
         },
         {
           text: 'Application Review',
-          href: '#',
+          href: getPermalink('/college/application'),
         },
         {
           text: 'Resume Review',
-          href: '#',
+          href: getPermalink('/college/resume'),
         },
       ],
     },

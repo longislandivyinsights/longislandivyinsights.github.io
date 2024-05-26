@@ -1,0 +1,179 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Advanced Placement Coursework',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Advanced Placement Coursework"
+    image={{
+      src: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'TODO: Add alt text',
+    }}
+    actions={[
+      {
+        text: 'Courses We Offer',
+        href: '#courses',
+      },
+    ]}
+  >
+    <Fragment slot="title"> Excel in AP Classes </Fragment>
+
+    <Fragment slot="subtitle">
+      Advanced Placement (AP) courses provide an opportunity for high school students to challenge themselves and earn
+      college credit. We offer tutoring in a variety of AP subjects to help you excel in your coursework and prepare for
+      the AP exams.
+    </Fragment>
+  </Hero>
+
+  <Features2
+    id="courses"
+    title="AP Coursework"
+    subtitle="Our tutors have achieved top scores on various AP exams and can help you excel in your AP coursework."
+    columns={3}
+    tagline="Courses We Offer"
+    items={[
+      {
+        title: 'AP Biology',
+        description:
+          'The AP Biology course is designed to be the equivalent of a college introductory biology course usually taken by biology majors during their first year.',
+        icon: 'tabler:microscope',
+      },
+      {
+        title: 'AP Calculus AB/BC',
+        description:
+          'The AP Calculus AB course is designed to be the equivalent of a first-semester college calculus course devoted to topics in differential and integral calculus. The AP Calculus BC course is designed to be the equivalent of a second-semester college calculus course devoted to topics in differential and integral calculus.',
+        icon: 'tabler:math-symbols',
+      },
+      {
+        title: 'AP Chemistry',
+        description:
+          'The AP Chemistry course is designed to be the equivalent of the general chemistry course usually taken during the first college year.',
+        icon: 'tabler:flask',
+      },
+      {
+        title: 'AP Chinese Language and Culture',
+        description:
+          'The AP Chinese Language and Culture course is designed to be the equivalent of a third-year college course in Mandarin Chinese.',
+        icon: 'tabler:flag',
+      },
+      {
+        title: 'AP Computer Science Principles',
+        description:
+          'The AP Computer Science Principles course is designed to be equivalent to a first-semester introductory college computing course.',
+        icon: 'tabler:cpu',
+      },
+      {
+        title: 'AP Drawing',
+        description:
+          'The AP Drawing course is designed to be the equivalent of a one-semester, college-level drawing course.',
+        icon: 'tabler:pencil',
+      },
+      {
+        title: 'AP English Language and Composition',
+        description:
+          'The AP English Language and Composition course is designed to be the equivalent of a first-year college writing course.',
+        icon: 'tabler:writing',
+      },
+      {
+        title: 'AP English Literature and Composition',
+        description:
+          'The AP English Literature and Composition course is designed to be the equivalent of a college freshman English course.',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'AP French Language and Culture',
+        description:
+          'The AP French Language and Culture course is designed to be the equivalent of a third-year college course in French.',
+        icon: 'tabler:flag',
+      },
+      {
+        title: 'AP Macroeconomics',
+        description:
+          'The AP Macroeconomics course is designed to be the equivalent of a college introductory macroeconomics course.',
+        icon: 'tabler:chart-histogram',
+      },
+      {
+        title: 'AP Physics 1',
+        description:
+          'The AP Physics 1 course is designed to be the equivalent of a first-semester college course in algebra-based physics.',
+        icon: 'tabler:atom',
+      },
+      {
+        title: 'AP Physics 2',
+        description:
+          'The AP Physics 2 course is designed to be the equivalent of a second-semester college course in algebra-based physics.',
+        icon: 'tabler:atom-2',
+      },
+      {
+        title: 'AP Physics C: Electricity and Magnetism',
+        description:
+          'The AP Physics C: Electricity and Magnetism course is designed to be the equivalent of a college course in electricity and magnetism.',
+        icon: 'tabler:circuit-battery',
+      },
+      {
+        title: 'AP Physics C: Mechanics',
+        description:
+          'The AP Physics C: Mechanics course is designed to be the equivalent of a college course in mechanics.',
+        icon: 'tabler:atom',
+      },
+      {
+        title: 'AP Physics 2',
+        description:
+          'The AP Physics 2 course is designed to be the equivalent of a second-semester college course in algebra-based physics.',
+        icon: 'tabler:math-integrals',
+      },
+      {
+        title: 'AP Psychology',
+        description:
+          'The AP Psychology course is designed to introduce students to the systematic and scientific study of the behavior and mental processes of human beings and other animals.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'AP Research',
+        description: 'The AP Research course is designed to be the equivalent of a college-level research course.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'AP Seminar',
+        description: 'The AP Seminar course is designed to be the equivalent of a first-year college seminar course.',
+        icon: 'tabler:friends',
+      },
+      {
+        title: 'AP Spanish Language and Culture',
+        description:
+          'The AP Spanish Language and Culture course is designed to be the equivalent of a third-year college course in Spanish.',
+        icon: 'tabler:flag',
+      },
+      {
+        title: 'AP Statistics',
+        description:
+          'The AP Statistics course is designed to introduce students to the major concepts and tools for collecting, analyzing, and drawing conclusions from data.',
+        icon: 'tabler:chart-candle',
+      },
+      {
+        title: 'AP United States History',
+        description:
+          'The AP United States History course is designed to be the equivalent of a two-semester introductory college or university U.S. history course.',
+        icon: 'tabler:flag',
+      },
+      {
+        title: 'AP World History: Modern',
+        description:
+          'The AP World History: Modern course is designed to be the equivalent of a two-semester introductory college or university world history course.',
+        icon: 'tabler:history',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+</Layout>

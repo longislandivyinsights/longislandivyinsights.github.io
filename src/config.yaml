@@ -11,7 +11,7 @@ metadata:
   title:
     default: CollegeCoaches
     template: '%s — CollegeCoaches'
-  description: "\U0001F680 We help students excel in their classes and earn admission into top schools!"
+  description: 'TODO: Add a description for the site'
   robots:
     index: true
     follow: true

@@ -1,0 +1,66 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Standardized Testing',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Standardized Testing"
+    image={{
+      src: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'TODO: Add alt text',
+    }}
+    actions={[
+      {
+        text: 'Exams We Offer',
+        href: '#exams',
+      },
+    ]}
+  >
+    <Fragment slot="title"> Excel in SAT and ACT Exams </Fragment>
+
+    <Fragment slot="subtitle">
+      Standardized testing can be a challenging aspect of high school. We offer test prep services to help you achieve
+      your best scores.
+    </Fragment>
+  </Hero>
+
+  <Features2
+    id="exams"
+    title="Standardized Testing"
+    subtitle="Our tutors have achieved top scores and can help you excel on your exams."
+    columns={3}
+    tagline="Exams We Offer"
+    items={[
+      {
+        title: 'ACT',
+        description:
+          'The ACT covers four academic skill areas: English, mathematics, reading, and science reasoning. It also offers an optional writing test.',
+        icon: 'tabler:notes',
+      },
+      {
+        title: 'PSAT',
+        description:
+          'The PSAT covers three academic skill areas: mathematics, reading, and writing. Scoring highly on the exam may qualify you for the National Merit Scholarship Program.',
+        icon: 'tabler:notes',
+      },
+      {
+        title: 'SAT',
+        description:
+          'The SAT covers three academic skill areas: mathematics, reading, and writing. It also offers an optional writing test.',
+        icon: 'tabler:notes',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+</Layout>
