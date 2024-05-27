@@ -1,0 +1,62 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'College Essay Review',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="College Essay Review"
+    image={{
+      src: 'https://images.unsplash.com/photo-1504691342899-4d92b50853e1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Silver MacBook showing application essay',
+    }}
+    actions={[
+      {
+        text: 'Services We Offer',
+        href: '#services',
+      },
+    ]}
+  >
+    <Fragment slot="title"> Write Compelling College Essays </Fragment>
+
+    <Fragment slot="subtitle">
+      Drafting, writing, and revising college application essays can be a daunting task. It can be challenging to find
+      the right words, structure your essay effectively, and convey your unique story. Our college essay review services
+      are designed to help you navigate the process and make your essays stand out.
+    </Fragment>
+  </Hero>
+
+  <Features
+    id="services"
+    tagline="Services We Offer"
+    title="College Essay Review Services"
+    subtitle="Our college essay review services are designed to help you craft compelling essays that showcase your unique story and make your application stand out. We offer a range of services to meet your needs, from essay brainstorming and drafting to comprehensive essay reviews."
+    items={[
+      {
+        title: 'Brainstorming Topics',
+        description:
+          'We can help you brainstorm essay topics that showcase your unique story and experiences. Our team will work with you to identify compelling topics that will make your application stand out.',
+        icon: 'tabler:bubble-text',
+      },
+      {
+        title: 'Drafting Essays',
+        description:
+          'We can help you draft compelling essays that effectively convey your key experiences. Our team will work with you to craft essays that are engaging, well-structured, and showcase your unique voice.',
+        icon: 'tabler:writing',
+      },
+      {
+        title: 'Comprehensive Essay Reviews',
+        description:
+          'We can provide comprehensive reviews of your essays to help you refine your writing and make your application stand out. Our team will provide detailed feedback on your essays, including suggestions for improvement and areas to focus on.',
+        icon: 'tabler:file-check',
+      },
+    ]}
+  />
+</Layout>

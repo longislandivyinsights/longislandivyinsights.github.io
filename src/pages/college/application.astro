@@ -1,0 +1,69 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'College Application Review',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="College Application Review"
+    image={{
+      src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Graduates throwing caps in the air',
+    }}
+    actions={[
+      {
+        text: 'Services We Offer',
+        href: '#services',
+      },
+    ]}
+  >
+    <Fragment slot="title"> Finalize Your College Applications </Fragment>
+
+    <Fragment slot="subtitle">
+      Filling out college applications and reviewing them for submission can be a challenging task. It's important to
+      carefully consider each application, ensuring that all the necessary information is provided and that it
+      accurately represents your achievements and aspirations. Our college application review services can help you
+      navigate this process and ensure that your applications are strong and compelling.
+    </Fragment>
+  </Hero>
+
+  <Features
+    id="services"
+    tagline="Services We Offer"
+    title="College Application Review Services"
+    subtitle="Our college application review services are designed to help you submit strong and compelling applications that accurately represent your achievements and aspirations. We offer a range of services to help you navigate the college application process and ensure that your applications stand out."
+    items={[
+      {
+        title: 'Filling Out Applications',
+        description:
+          'We can help you fill out college applications, ensuring that all the necessary information is provided and that your applications are accurate and complete. Our team can also provide guidance on which applications to fill out and how to approach each one.',
+        icon: 'tabler:file-text',
+      },
+      {
+        title: 'Reviewing Applications',
+        description:
+          'We can review your college applications to ensure that they are strong and compelling, accurately representing your achievements and aspirations. Our team can provide feedback on your applications and suggest ways to improve them.',
+        icon: 'tabler:file-check',
+      },
+      {
+        title: 'Navigating Deadlines',
+        description:
+          'We can help you navigate college application deadlines, ensuring that you submit your applications on time. Our team can provide guidance on when to submit applications and how to manage your time effectively.',
+        icon: 'tabler:calendar-month',
+      },
+      {
+        title: 'Preparing for Interviews',
+        description:
+          'We can help you prepare for college interviews, providing you with tips and strategies to help you make a strong impression. Our team can also conduct mock interviews to help you practice and improve your interview skills.',
+        icon: 'tabler:users',
+      },
+    ]}
+  />
+</Layout>

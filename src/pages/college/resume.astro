@@ -1,0 +1,62 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Resume Review',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Resume Review"
+    image={{
+      src: 'https://images.unsplash.com/photo-1602407294553-6ac9170b3ed0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Resume on MacBook Pro',
+    }}
+    actions={[
+      {
+        text: 'Services We Offer',
+        href: '#services',
+      },
+    ]}
+  >
+    <Fragment slot="title"> Polish Your Resume </Fragment>
+
+    <Fragment slot="subtitle">
+      Writing and revising resumes can be overwhelming, even as a professional. It can be challenging to determine what
+      information to include, how to format it, and how to highlight your skills and experiences. Our resume review
+      services can help you navigate the process and create a compelling resume that stands out to colleges.
+    </Fragment>
+  </Hero>
+
+  <Features
+    id="services"
+    tagline="Services We Offer"
+    title="Resume Review Services"
+    subtitle="Our resume review services are designed to help you create a resume that highlights your skills, experiences, and accomplishments. We offer a range of services to help you create a resume that stands out to colleges."
+    items={[
+      {
+        title: 'Content Review',
+        description:
+          'We can review the content of your resume to ensure that it is comprehensive and compelling. Our team can help you identify the most important information to include, how to highlight your skills and experiences, and how to tailor your resume to the specific requirements of colleges.',
+        icon: 'tabler:file-text',
+      },
+      {
+        title: 'Formatting',
+        description:
+          'We can help you format your resume to ensure that it is easy to read and visually appealing. Our team can help you choose a font, layout, and color scheme that will make your resume stand out to colleges.',
+        icon: 'tabler:indent-increase',
+      },
+      {
+        title: 'Proofreading',
+        description:
+          'We can proofread your resume to ensure that it is free of errors and typos. Our team can help you correct spelling, grammar, and punctuation mistakes to ensure that your resume is professional and polished.',
+        icon: 'tabler:file-check',
+      },
+    ]}
+  />
+</Layout>

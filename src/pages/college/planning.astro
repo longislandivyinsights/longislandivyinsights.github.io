@@ -1,0 +1,68 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'College Planning',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="College Planning"
+    image={{
+      src: 'https://images.unsplash.com/photo-1623631484725-fef26b75b402?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Princeton University campus in the fall',
+    }}
+    actions={[
+      {
+        text: 'Services We Offer',
+        href: '#services',
+      },
+    ]}
+  >
+    <Fragment slot="title"> Plan Your College Applications </Fragment>
+
+    <Fragment slot="subtitle">
+      Planning for college can be overwhelming. It can be challenging to determine which schools to apply to, what to
+      major in, and what you can do to increase your chances of getting accepted. Our college planning services can help
+      you navigate the process and make informed decisions.
+    </Fragment>
+  </Hero>
+
+  <Features
+    id="services"
+    tagline="Services We Offer"
+    title="College Planning Services"
+    subtitle="Our college planning services are designed to help you make informed decisions about your future. We offer a range of services to help you navigate the college application process and increase your chances of getting accepted."
+    items={[
+      {
+        title: 'Selecting Major(s)',
+        description:
+          'We can help you explore different majors and determine which ones align with your interests, skills, and career goals. We can also help you identify which majors are in high demand and have strong job prospects.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Finding Schools',
+        description:
+          'We can help you research different schools and determine which ones are the best fit for you. We can help you identify schools that offer the programs you are interested in and have the resources you need to succeed.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Choosing Extracurriculars',
+        description:
+          'We can help you identify extracurricular activities that align with your interests and goals. We can also help you determine which activities will make your college application stand out and increase your chances of getting accepted.',
+        icon: 'tabler:piano',
+      },
+      {
+        title: 'Planning Summer Activities',
+        description:
+          'We can help you plan summer activities that will help you build your skills and experience. We can help you identify internships, volunteer opportunities, and other activities that will make your college application stand out.',
+        icon: 'tabler:beach',
+      },
+    ]}
+  />
+</Layout>
