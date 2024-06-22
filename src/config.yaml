@@ -11,7 +11,7 @@ metadata:
   title:
     default: CollegeCoaches
     template: '%s — CollegeCoaches'
-  description: 'TODO: Add a description for the site'
+  description: 'CollegeCoaches provides affordable and expert college consulting, leveraging our recent experience with the application process to offer relevant, up-to-date guidance. Each student benefits from personalized support with multiple advisors, ensuring a comprehensive and tailored approach to their college journey.'
   robots:
     index: true
     follow: true
