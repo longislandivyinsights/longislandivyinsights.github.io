@@ -1,0 +1,191 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Yearly Packages',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Yearly Packages"
+    image={{
+      src: 'https://images.unsplash.com/photo-1435527173128-983b87201f4d?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Yearly planner opened up on a desk',
+    }}
+    actions={[
+      {
+        text: 'Our Packages',
+        href: '#9th-grade',
+      },
+    ]}
+  >
+    <Fragment slot="title"> Here's Our Strategy </Fragment>
+
+    <Fragment slot="subtitle">
+      We offer a comprehensive set of yearly packages designed to help students navigate the college application
+      process. Our team of experienced advisors, who have successfully gained admission to prestigious universities
+      themselves, are here to provide guidance, support, and personalized strategies tailored to each student's goals
+      and aspirations.
+    </Fragment>
+  </Hero>
+
+  <!-- Features3 Widget ****************** -->
+
+  <Features2
+    id="9th-grade"
+    title="9th Grade"
+    subtitle="Freshman Year"
+    columns={3}
+    items={[
+      {
+        title: 'Tutoring',
+      },
+      {
+        title: 'Curriculum Planning',
+      },
+      {
+        title: 'Club and Sports Advice',
+      },
+      {
+        title: 'Volunteer Work Planning',
+      },
+      {
+        title: 'Passion Project Planning',
+      },
+      {
+        title: 'Resume Building and Review',
+      },
+      {
+        title: 'Summer Program Planning',
+      },
+    ]}
+  />
+
+  <Features2
+    id="10th-grade"
+    title="10th Grade"
+    subtitle="Sophomore Year"
+    columns={3}
+    items={[
+      {
+        title: 'Tutoring',
+      },
+      {
+        title: 'Curriculum Planning',
+      },
+      {
+        title: 'Club and Sports Advice',
+      },
+      {
+        title: 'Early PSAT Tutoring',
+      },
+      {
+        title: 'Volunteer Work Planning',
+      },
+      {
+        title: 'Passion Project Planning',
+      },
+      {
+        title: 'AP and Dual Enrollment Discussions',
+      },
+      {
+        title: 'Summer Program Planning',
+      },
+      {
+        title: 'Resume Building and Review',
+      },
+      {
+        title: 'College Major Counseling',
+      },
+      {
+        title: 'Early College Program Research',
+      },
+    ]}
+  />
+
+  <Features2
+    id="11th-grade"
+    title="11th Grade"
+    subtitle="Junior Year"
+    columns={3}
+    items={[
+      {
+        title: 'Curriculum Planning',
+      },
+      {
+        title: 'Club and Sports Advice',
+      },
+      {
+        title: 'PSAT, SAT, and ACT Tutoring',
+      },
+      {
+        title: 'Volunteer Work Planning',
+      },
+      {
+        title: 'Finding the Right Colleges',
+      },
+      {
+        title: 'Schools to Visit',
+      },
+      {
+        title: 'College Essay Planning',
+      },
+      {
+        title: 'Letters of Recommendation Advice',
+      },
+      {
+        title: 'Resume Building and Review',
+      },
+      {
+        title: 'Summer Program Planning',
+      },
+    ]}
+  />
+
+  <Features2
+    id="12th-grade"
+    title="12th Grade"
+    subtitle="Senior Year"
+    columns={3}
+    items={[
+      {
+        title: 'Finding the Right Colleges',
+      },
+      {
+        title: 'College Essay Review and Revision',
+      },
+      {
+        title: 'Letters of Recommendation Advice',
+      },
+      {
+        title: 'SAT and ACT Tutoring',
+      },
+      {
+        title: 'Choosing the Right Major',
+      },
+      {
+        title: 'Resume Building and Review',
+      },
+      {
+        title: 'Filling out Applications',
+      },
+      {
+        title: 'College Interview Prep',
+      },
+      {
+        title: 'Early Decision Plans',
+      },
+      {
+        title: 'Letters of Continued Interest',
+      },
+      {
+        title: 'Committing to the Right College',
+      },
+    ]}
+  />
+</Layout>
