@@ -1,0 +1,280 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Portal Home',
+};
+
+const user = Astro.locals.user;
+if (!user) {
+  return Astro.redirect('/login');
+}
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Portal Home"
+    image={{
+      src: '~/assets/images/the-team.jpg',
+      alt: 'The CollegeCoaches Team',
+    }}
+    actions={[
+      {
+        text: 'Our Team',
+        href: '#brandon',
+      },
+    ]}
+  >
+    <Fragment slot="title"> Hello, Username! </Fragment>
+
+    <Fragment slot="subtitle">
+      Welcome to the CollegeCoaches Student Portal! [TODO: Add more information here.]
+    </Fragment>
+  </Hero>
+
+  <!-- Brandon Content ******************* -->
+  <Content
+    id="brandon"
+    columns={2}
+    items={[
+      {
+        icon: 'tabler:school',
+        callToAction: {
+          text: 'Yale College',
+        },
+      },
+      {
+        icon: 'tabler:bookmark',
+        callToAction: {
+          text: 'Mechanical Engineering',
+        },
+      },
+    ]}
+    image={{
+      src: '~/assets/images/brandon.jpg',
+      alt: 'Brandon',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Brandon</h2>
+      <p>
+        Brandon is a third-year student at Yale College, where he is pursuing a Bachelor of Science in Mechanical
+        Engineering.
+      </p>
+      <br />
+      <p>
+        Brandon is also the Chief Mechanical Engineer of the Yale Bulldogs Racing team and is an active member of the
+        Yale Undergraduate Aerospace Association's rocketry team.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Christopher Content ******************* -->
+  <Content
+    id="christopher"
+    isReversed
+    columns={4}
+    items={[
+      {
+        icon: 'tabler:school',
+        callToAction: {
+          text: 'Harvard College',
+        },
+      },
+      {
+        icon: 'tabler:bookmark',
+        callToAction: {
+          text: 'Physics',
+        },
+      },
+      {
+        icon: 'tabler:bookmark',
+        callToAction: {
+          text: 'Mechanical Engineering',
+        },
+      },
+      {
+        icon: 'tabler:bookmarks',
+        callToAction: {
+          text: 'Astrophysics',
+        },
+      },
+    ]}
+    image={{
+      src: '~/assets/images/christopher.jpg',
+      alt: 'Christopher',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Christopher</h2>
+      <p>
+        Christopher is a third-year student at Harvard College, where he is pursuing a Bachelor of Arts in Physics and
+        Mechanical Engineering. He is also pursuing a minor in Astrophysics.
+      </p>
+      <br />
+      <p>
+        Christopher is also the Chief Engineer of the Harvard Satellite Team, where he is working on a CubeSat project
+        that will be launched into space in 2025.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Gavin Content ******************* -->
+  <Content
+    id="gavin"
+    columns={4}
+    items={[
+      {
+        icon: 'tabler:school',
+        callToAction: {
+          text: 'Cornell University',
+        },
+      },
+      {
+        icon: 'tabler:bookmark',
+        callToAction: {
+          text: 'Mechanical Engineering',
+        },
+      },
+      {
+        icon: 'tabler:bookmarks',
+        callToAction: {
+          text: 'Computer Science',
+        },
+      },
+      {
+        icon: 'tabler:bookmarks',
+        callToAction: {
+          text: 'Robotics',
+        },
+      },
+    ]}
+    image={{
+      src: '~/assets/images/gavin.jpg',
+      alt: 'Gavin',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Gavin</h2>
+      <p>
+        Gavin is a second-year student at Cornell University, where he is pursuing a Bachelor of Science in Mechanical
+        Engineering. He is also pursuing minors in Computer Science and Robotics.
+      </p>
+      <br />
+      <p>
+        Gavin is also a current member of Cornell's EmPRISE Labs for Assistive Robotics, where he is working on a
+        project to improve the quality of life of people with mobility limitations.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Handsome Content ******************* -->
+  <Content
+    id="handsome"
+    isReversed
+    columns={3}
+    items={[
+      {
+        icon: 'tabler:school',
+        callToAction: {
+          text: 'Columbia University',
+        },
+      },
+      {
+        icon: 'tabler:bookmark',
+        callToAction: {
+          text: 'Biomedical Engineering',
+        },
+      },
+      {
+        icon: 'tabler:bookmarks',
+        callToAction: {
+          text: 'Computer Science',
+        },
+      },
+    ]}
+    image={{
+      src: '~/assets/images/handsome.jpg',
+      alt: 'Handsome',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Handsome</h2>
+      <p>
+        Handsome is a second-year student at Columbia University, where he is pursuing a Bachelor of Science in
+        Biomedical Engineering. He is also pursuing a minor in Computer Science.
+      </p>
+      <br />
+      <p>
+        Before transferring to Columbia University, Handsome was also a member of RIT's Vex U Robotics team, where he
+        placed as a division finalist in the 2024 Vex U World Championship.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- James Content ******************* -->
+  <Content
+    id="james"
+    columns={2}
+    items={[
+      {
+        icon: 'tabler:school',
+        callToAction: {
+          text: 'Cornell University',
+        },
+      },
+      {
+        icon: 'tabler:bookmark',
+        callToAction: {
+          text: 'Mechanical Engineering',
+        },
+      },
+    ]}
+    image={{
+      src: '~/assets/images/james.jpg',
+      alt: 'James',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">James</h2>
+      <p>
+        James is a third-year student at Cornell University, where he is pursuing a Bachelor of Science in Mechanical
+        Engineering.
+      </p>
+      <br />
+      <p>
+        James is also a Kinetic Subteam Co-Lead of the Combat Robotics at Cornell Project Team, where he designs and
+        builds combat robots to compete in the National Havoc Robot League competition.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+</Layout>
