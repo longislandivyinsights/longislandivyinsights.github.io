@@ -91,10 +91,8 @@ export const footerData = {
     },
     {
       title: 'Student Portal',
-      links: [
-        { text: 'Login', href: getPermalink('/login') },
-      ]
-    }
+      links: [{ text: 'Login', href: getPermalink('/login') }],
+    },
   ],
   secondaryLinks: [
     { text: 'Terms of Service', href: getPermalink('/terms') },
