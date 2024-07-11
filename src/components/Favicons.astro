@@ -3,11 +3,17 @@ import appleTouch from '~/assets/favicons/apple-touch-icon.png';
 import thirtyTwo from '~/assets/favicons/favicon-32x32.png';
 import sixteen from '~/assets/favicons/favicon-16x16.png';
 import manifest from '~/assets/favicons/site.webmanifest';
+import maskIcon from '~/assets/favicons/safari-pinned-tab.svg';
+import favicon from '~/assets/favicons/favicon.ico';
+import browserConfig from '~/assets/favicons/browserconfig.xml';
 ---
 
 <link rel="apple-touch-icon" sizes="180x180" href={appleTouch.src} />
 <link rel="icon" type="image/png" sizes="32x32" href={thirtyTwo.src} />
 <link rel="icon" type="image/png" sizes="16x16" href={sixteen.src} />
 <link rel="manifest" href={manifest} />
+<link rel="mask-icon" href={maskIcon.src} color="#5bbad5" />
+<link rel="shortcut icon" href={favicon} />
 <meta name="msapplication-TileColor" content="#da532c" />
+<meta name="msapplication-config" content={browserConfig} />
 <meta name="theme-color" content="#ffffff" />
