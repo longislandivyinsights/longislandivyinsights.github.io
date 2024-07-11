@@ -58,6 +58,7 @@ export const headerData = {
       href: getPermalink('/contact'),
     },
   ],
+  actions: [{ text: 'Login', href: getPermalink('/login'), target: '_self' }],
 };
 
 export const footerData = {
@@ -88,6 +89,12 @@ export const footerData = {
         { text: 'Contact', href: getPermalink('/contact') },
       ],
     },
+    {
+      title: 'Student Portal',
+      links: [
+        { text: 'Login', href: getPermalink('/login') },
+      ]
+    }
   ],
   secondaryLinks: [
     { text: 'Terms of Service', href: getPermalink('/terms') },

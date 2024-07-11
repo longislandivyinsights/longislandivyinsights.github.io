@@ -1,0 +1,42 @@
+---
+import type { LoginForm as Props } from '~/types';
+import Button from '~/components/ui/Button.astro';
+
+const { inputs, button = 'Login' } = Astro.props;
+---
+
+<form action="/api/login" method="POST">
+  {
+    inputs &&
+      inputs.map(
+        ({ type = 'text', name, label = '', placeholder = '' }) =>
+          name && (
+            <div class="mb-6">
+              {label && (
+                <label for={name} class="block text-sm font-medium">
+                  {label}
+                </label>
+              )}
+              <input
+                type={type}
+                name={name}
+                id={name}
+                placeholder={placeholder}
+                required
+                class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+              />
+            </div>
+          )
+      )
+  }
+
+  {
+    button && (
+      <div class="mt-10 grid">
+        <Button variant="primary" type="submit">
+          {button}
+        </Button>
+      </div>
+    )
+  }
+</form>

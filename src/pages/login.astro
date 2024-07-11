@@ -1,0 +1,35 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import LoginForm from '~/components/widgets/LoginForm.astro';
+
+const metadata = {
+  title: 'Login',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="Login" title="Student Portal Login" />
+
+  <LoginForm
+    id="login-form"
+    title="Log in to your account!"
+    subtitle="Please enter your case-sensitive username and password to log in. If you do not have an account or have forgotten your password, please contact us."
+    inputs={[
+      {
+        type: 'text',
+        name: 'username',
+        label: 'Username',
+        placeholder: 'Username',
+      },
+      {
+        type: 'password',
+        name: 'password',
+        label: 'Password',
+        placeholder: '••••••••',
+      },
+    ]}
+  />
+</Layout>

@@ -212,6 +212,11 @@ export interface Form {
   description?: string;
 }
 
+export interface LoginForm {
+  inputs?: Array<Input>;
+  button?: string;
+}
+
 // WIDGETS
 export interface Hero extends Omit<Headline, 'classes'>, Omit<Widget, 'isDark' | 'classes'> {
   content?: string;
@@ -284,3 +289,5 @@ export interface Content extends Omit<Headline, 'classes'>, Widget {
 }
 
 export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {}
+
+export interface LoginForm extends Omit<Headline, 'classes'>, LoginForm, Widget {}
