@@ -1,6 +1,6 @@
 site:
   name: Long Island Ivy Insights and Consulting, LLC
-  site: 'longislandivyinsights.com'
+  site: 'https://longislandivyinsights.com'
   base: '/'
   trailingSlash: false
 
