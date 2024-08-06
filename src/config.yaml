@@ -1,6 +1,6 @@
 site:
-  name: CollegeCoaches
-  site: 'https://CollegeCoaches.github.io'
+  name: Long Island Ivy Insights and Consulting, LLC
+  site: 'longislandivyinsights.com'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: CollegeCoaches
-    template: '%s — CollegeCoaches'
-  description: 'CollegeCoaches provides affordable and expert college consulting, leveraging our recent experience with the application process to offer relevant, up-to-date guidance. Each student benefits from personalized support with multiple advisors, ensuring a comprehensive and tailored approach to their college journey.'
+    default: Long Island Ivy Insights and Consulting, LLC
+    template: '%s — LI Ivy Insights'
+  description: 'Long Island Ivy Insights and Consulting provides affordable and expert college consulting, leveraging our recent experience with the application process to offer relevant, up-to-date guidance. Each student benefits from personalized support with multiple advisors, ensuring a comprehensive and tailored approach to their college journey.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: CollegeCoaches
+    site_name: Long Island Ivy Insights and Consulting
     images:
       - url: '~/assets/images/default.png'
         width: 1200
