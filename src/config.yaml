@@ -1,5 +1,5 @@
 site:
-  name: Long Island Ivy Insights and Consulting, LLC
+  name: LI Ivy Insights
   site: 'https://longislandivyinsights.com'
   base: '/'
   trailingSlash: false
@@ -66,7 +66,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: 'G-JS6LFXZ3KE' # or "G-XXXXXXXXXX"
+      id: 'G-XZJ77K3M0J' # or "G-XXXXXXXXXX"
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
