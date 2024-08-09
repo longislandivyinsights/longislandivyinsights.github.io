@@ -93,11 +93,13 @@ export const footerData = {
     { text: 'Terms of Service', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
-  // TODO: Add social links
   socialLinks: [
-    //   { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    //   { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    //   { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+    { ariaLabel: 'TikTok', icon: 'tabler:brand-tiktok', href: 'https://www.tiktok.com/@longislandivyinsights' },
+    {
+      ariaLabel: 'Instagram',
+      icon: 'tabler:brand-instagram',
+      href: 'https://www.instagram.com/longislandivyinsights/',
+    },
   ],
   footNote: `
     <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="${thirtyTwo.src}" alt="Long Island Ivy Insights and Consulting logo" loading="lazy"></img>

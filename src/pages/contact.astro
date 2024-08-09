@@ -18,76 +18,6 @@ const metadata = {
     id="form"
     title="Email us today!"
     subtitle="Please fill out the following form to request more information about our services. We look forward to hearing from you!"
-    inputs={[
-      {
-        type: 'text',
-        name: '$parentFirstName',
-        label: 'Parent First Name',
-        required: true,
-      },
-      {
-        type: 'text',
-        name: '$parentLastName',
-        label: 'Parent Last Name',
-        required: true,
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Parent Email',
-        required: true,
-      },
-      {
-        type: 'tel',
-        name: '$parentCell',
-        label: 'Parent Cell Phone',
-        required: true,
-      },
-      {
-        type: 'text',
-        name: '$studentFirstName',
-        label: 'Student First Name',
-        required: true,
-      },
-      {
-        type: 'text',
-        name: '$studentLastName',
-        label: 'Student Last Name',
-        required: true,
-      },
-      {
-        type: 'email',
-        name: '$studentEmail',
-        label: 'Student Email',
-        required: false,
-      },
-      {
-        type: 'tel',
-        name: '$studentCell',
-        label: 'Student Cell Phone',
-        required: false,
-      },
-      {
-        type: 'text',
-        name: '$studentSchool',
-        label: 'Student High School',
-        required: true,
-      },
-      {
-        type: 'number',
-        name: '$studentGradYear',
-        label: 'Student Graduation Year',
-        required: true,
-      },
-    ]}
-    textarea={{
-      label: 'What services are you interested in?',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our team typically responds within 24 business hours."
   />
 
   <!-- Features2 Widget ************** -->
@@ -97,12 +27,12 @@ const metadata = {
     items={[
       {
         title: 'Email',
-        description: 'TODO: INSERT EMAIL HERE',
+        description: '<a href="mailto:longislandivyinsights@gmail.com">longislandivyinsights@gmail.com</a>',
         icon: 'tabler:mail',
       },
       {
         title: 'Location',
-        description: 'USA',
+        description: 'Long Island, NY',
         icon: 'tabler:map-pin',
       },
     ]}
