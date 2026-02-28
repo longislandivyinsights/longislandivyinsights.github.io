@@ -3,10 +3,14 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Steps from '~/components/widgets/Steps.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Long Island Ivy Insights and Consulting, LLC',
+  title: 'Long Island Ivy Insights and Consulting, LLC — College Consulting & Tutoring',
   ignoreTitleTemplate: true,
+  description:
+    'Long Island Ivy Insights and Consulting provides expert college consulting and tutoring from Ivy League students. Personalized guidance for Long Island students in college applications, essay review, SAT/ACT prep, and academic tutoring.',
 };
 ---
 
@@ -22,7 +26,6 @@ const metadata = {
         text: 'Course Tutoring',
         href: '#course-tutoring',
       },
-      // TODO: MAYBE INSERT AN IMAGE HERE
     ]}
   >
     <Fragment slot="title">
@@ -32,13 +35,40 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="font-semibold">Long Island Ivy Insights and Consulting, LLC</span> is a consulting and tutoring service
-      run by college students. We help students excel in their classes and earn admission into top schools!
+      <span class="font-semibold">Long Island Ivy Insights and Consulting</span> provides affordable, personalized college
+      consulting and tutoring from students at Yale, Harvard, Cornell, and Columbia. We help Long Island students excel in
+      their classes and earn admission into top schools.
     </Fragment>
   </Hero>
 
-  <!-- Steps Widget ****************** -->
+  <!-- Why Choose Us ****************** -->
+  <Features2
+    title="Why Choose Us?"
+    subtitle="Our team brings firsthand experience from the Ivy League admissions process to help you succeed."
+    columns={3}
+    items={[
+      {
+        title: 'Ivy League Advisors',
+        description:
+          'Every advisor on our team was admitted to and attends a top university, giving you guidance rooted in real experience.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Personalized Support',
+        description:
+          'Each student is matched with multiple advisors for a comprehensive, tailored approach to their academic journey.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Affordable Pricing',
+        description:
+          'We believe expert guidance should be accessible. Our services are priced to be affordable for Long Island families.',
+        icon: 'tabler:wallet',
+      },
+    ]}
+  />
 
+  <!-- Steps Widget: College Consulting ****************** -->
   <Steps
     id="college-consulting"
     title="College applications from start to finish."
@@ -50,7 +80,7 @@ const metadata = {
         icon: 'tabler:school',
       },
       {
-        title: 'Step 2: <span class="font-medium">Writing</em>',
+        title: 'Step 2: <span class="font-medium">Writing</span>',
         description:
           "We'll guide you through the process of writing your college essays and personal statements. We'll help you brainstorm ideas, structure your essays, and write compelling statements.",
         icon: 'tabler:writing',
@@ -68,12 +98,11 @@ const metadata = {
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1537888692311-8a7fb3e9f374?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      alt: 'MIT Great Dome',
+      alt: 'MIT Great Dome representing top college aspirations',
     }}
   />
 
-  <!-- Steps Widget ****************** -->
-
+  <!-- Steps Widget: Tutoring ****************** -->
   <Steps
     isReversed
     id="course-tutoring"
@@ -104,7 +133,26 @@ const metadata = {
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      alt: 'Tutoring',
+      alt: 'Student receiving personalized tutoring guidance',
     }}
   />
+
+  <!-- Call to Action ****************** -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Started Today',
+        href: '/contact',
+        icon: 'tabler:mail',
+      },
+    ]}
+  >
+    <Fragment slot="title">Ready to Take the Next Step?</Fragment>
+
+    <Fragment slot="subtitle">
+      Contact us today to learn how our team of Ivy League advisors can help you achieve your academic and college
+      admissions goals.
+    </Fragment>
+  </CallToAction>
 </Layout>

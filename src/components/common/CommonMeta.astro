@@ -4,5 +4,53 @@ import { getAsset } from '~/utils/permalinks';
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#ffffff" />
 
 <link rel="sitemap" href={getAsset('/sitemap-index.xml')} />
+
+<!-- JSON-LD Structured Data for Local Business -->
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOrganization',
+    name: 'Long Island Ivy Insights and Consulting, LLC',
+    alternateName: 'LI Ivy Insights',
+    url: 'https://longislandivyinsights.com',
+    logo: 'https://longislandivyinsights.com/favicon-32x32.png',
+    description:
+      'Long Island Ivy Insights and Consulting provides affordable and expert college consulting and tutoring services from Ivy League students, offering personalized support for Long Island students.',
+    email: 'longislandivyinsights@gmail.com',
+    areaServed: {
+      '@type': 'Place',
+      name: 'Long Island, New York',
+    },
+    sameAs: ['https://www.tiktok.com/@longislandivyinsights', 'https://www.instagram.com/longislandivyinsights/'],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'College Consulting and Tutoring Services',
+      itemListElement: [
+        {
+          '@type': 'OfferCatalog',
+          name: 'College Consulting',
+          itemListElement: [
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'College Planning' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'College Essay Review' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'College Application Review' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Resume Review' } },
+          ],
+        },
+        {
+          '@type': 'OfferCatalog',
+          name: 'Academic Tutoring',
+          itemListElement: [
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'High School Tutoring' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SAT/ACT/PSAT Test Prep' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AP Course Tutoring' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'College Coursework Tutoring' } },
+          ],
+        },
+      ],
+    },
+  })}
+/>

@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /portal/
+
+Sitemap: https://longislandivyinsights.com/sitemap-index.xml

@@ -24,8 +24,6 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@twitter_user'
-    site: '@twitter_user'
     cardType: summary_large_image
 
 i18n:
