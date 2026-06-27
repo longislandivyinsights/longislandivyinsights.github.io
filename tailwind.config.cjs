@@ -1,5 +1,6 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
-import typographyPlugin from '@tailwindcss/typography';
+/* eslint-disable @typescript-eslint/no-var-requires */
+const defaultTheme = require('tailwindcss/defaultTheme');
+const typographyPlugin = require('@tailwindcss/typography');
 
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,json,md,mdx,svelte,ts,tsx,vue}'],

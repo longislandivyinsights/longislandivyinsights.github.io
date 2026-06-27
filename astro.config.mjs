@@ -12,12 +12,6 @@ import compress from 'astro-compress';
 
 import astrowind from './vendor/integration';
 
-import {
-  readingTimeRemarkPlugin,
-  responsiveTablesRehypePlugin,
-  lazyImagesRehypePlugin,
-} from './src/utils/frontmatter.mjs';
-
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const hasExternalScripts = false;
@@ -77,11 +71,6 @@ export default defineConfig({
 
   image: {
     domains: ['cdn.pixabay.com', 'images.unsplash.com'],
-  },
-
-  markdown: {
-    remarkPlugins: [readingTimeRemarkPlugin],
-    rehypePlugins: [responsiveTablesRehypePlugin, lazyImagesRehypePlugin],
   },
 
   vite: {

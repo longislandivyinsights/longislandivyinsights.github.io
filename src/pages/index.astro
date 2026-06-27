@@ -19,12 +19,13 @@ const metadata = {
   <Hero
     actions={[
       {
-        text: 'College Consulting',
-        href: '#college-consulting',
+        text: 'Book a Consultation',
+        href: '/contact',
+        variant: 'primary',
       },
       {
-        text: 'Course Tutoring',
-        href: '#course-tutoring',
+        text: 'Explore Services',
+        href: '#college-consulting',
       },
     ]}
   >
@@ -37,7 +38,7 @@ const metadata = {
     <Fragment slot="subtitle">
       <span class="font-semibold">Long Island Ivy Insights and Consulting</span> provides affordable, personalized college
       consulting and tutoring from students at Yale, Harvard, Cornell, and Columbia. We help Long Island students excel in
-      their classes and earn admission into top schools.
+      their classes, build stronger applications, and move through the admissions process with a clear plan.
     </Fragment>
   </Hero>
 
@@ -50,19 +51,19 @@ const metadata = {
       {
         title: 'Ivy League Advisors',
         description:
-          'Every advisor on our team was admitted to and attends a top university, giving you guidance rooted in real experience.',
+          'Every advisor on our team was admitted to and attends a top university, so students learn from people who recently navigated the same process.',
         icon: 'tabler:school',
       },
       {
         title: 'Personalized Support',
         description:
-          'Each student is matched with multiple advisors for a comprehensive, tailored approach to their academic journey.',
+          'Each student receives a tailored plan for classes, testing, activities, essays, and applications instead of generic advice.',
         icon: 'tabler:users',
       },
       {
         title: 'Affordable Pricing',
         description:
-          'We believe expert guidance should be accessible. Our services are priced to be affordable for Long Island families.',
+          'We keep guidance practical and accessible for Long Island families, with focused services and yearly packages.',
         icon: 'tabler:wallet',
       },
     ]}
@@ -71,24 +72,24 @@ const metadata = {
   <!-- Steps Widget: College Consulting ****************** -->
   <Steps
     id="college-consulting"
-    title="College applications from start to finish."
+    title="College applications from strategy to submission."
     items={[
       {
         title: 'Step 1: <span class="font-medium">Planning</span>',
         description:
-          "We'll help you identify your goals, strengths, and weaknesses. We'll also help you choose which colleges to apply to and what you can do to stand out.",
+          "We'll help you identify goals, strengths, target schools, likely majors, and the academic or extracurricular choices that can strengthen your profile.",
         icon: 'tabler:school',
       },
       {
         title: 'Step 2: <span class="font-medium">Writing</span>',
         description:
-          "We'll guide you through the process of writing your college essays and personal statements. We'll help you brainstorm ideas, structure your essays, and write compelling statements.",
+          "We'll guide brainstorming, outlines, and drafts so essays communicate a clear story in the student's own voice.",
         icon: 'tabler:writing',
       },
       {
         title: 'Step 3: <span class="font-medium">Editing</span>',
         description:
-          "We'll review your essays and provide feedback on how you can improve them. We'll help you refine your ideas, strengthen your arguments, and polish your writing.",
+          "We'll review essays, activity descriptions, resumes, and application details so each submission is polished and consistent.",
         icon: 'tabler:edit',
       },
       {
@@ -106,24 +107,24 @@ const metadata = {
   <Steps
     isReversed
     id="course-tutoring"
-    title="Tutoring for all high school courses."
+    title="Tutoring that supports real coursework."
     items={[
       {
         title: 'Step 1: <span class="font-medium">Assessment</span>',
         description:
-          "We'll assess your current understanding of the subject and identify areas where you need help. We'll also help you set goals and create a study plan.",
+          "We'll assess current class material, identify gaps, and set a realistic study plan around the student's course and test calendar.",
         icon: 'tabler:clipboard-list',
       },
       {
         title: 'Step 2: <span class="font-medium">Teaching</span>',
         description:
-          "We'll teach you the material you need to know and help you practice solving problems. We'll explain concepts, provide examples, and answer your questions.",
+          "We'll teach concepts, walk through examples, and practice the problem types or writing skills the student is seeing in class.",
         icon: 'tabler:book',
       },
       {
         title: 'Step 3: <span class="font-medium">Review</span>',
         description:
-          "We'll review the material you've learned and help you prepare for tests and exams. We'll quiz you on key concepts, test your understanding, and provide feedback on your performance.",
+          "We'll review homework, quizzes, essays, labs, and exam prep so the student can keep improving after each session.",
         icon: 'tabler:checklist',
       },
       {

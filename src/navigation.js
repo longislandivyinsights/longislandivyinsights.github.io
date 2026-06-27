@@ -58,6 +58,7 @@ export const headerData = {
       href: getPermalink('/contact'),
     },
   ],
+  actions: [{ text: 'Book a Consultation', href: getPermalink('/contact'), variant: 'primary' }],
 };
 
 export const footerData = {
