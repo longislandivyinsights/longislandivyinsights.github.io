@@ -6,7 +6,7 @@ import Layout from '~/layouts/PageLayout.astro';
 const metadata = {
   title: 'About Us',
   description:
-    'Meet the Long Island Ivy Insights team — advisors from Yale, Harvard, Cornell, and Columbia who provide personalized college consulting and tutoring on Long Island.',
+    'Meet the Long Island Ivy Insights team: advisors from Yale, Harvard, Cornell, Columbia, and MIT who provide personalized college consulting and tutoring on Long Island.',
 };
 ---
 
@@ -30,25 +30,38 @@ const metadata = {
 
     <Fragment slot="subtitle">
       We are a team of students who have been through the college application process and have earned admission to the
-      top universities in the United States. We are here to help you achieve your dreams.
+      top universities in the United States. We are here to help students build stronger applications, clearer academic
+      plans, and more confident paths toward college.
     </Fragment>
   </Hero>
 
   <!-- Brandon Content ******************* -->
   <Content
     id="brandon"
-    columns={2}
+    columns={4}
     items={[
       {
         icon: 'tabler:school',
         callToAction: {
-          text: 'Yale College',
+          text: 'Yale University',
         },
       },
       {
         icon: 'tabler:bookmark',
         callToAction: {
           text: 'Mechanical Engineering',
+        },
+      },
+      {
+        icon: 'tabler:briefcase',
+        callToAction: {
+          text: 'LeoLabs',
+        },
+      },
+      {
+        icon: 'tabler:tools',
+        callToAction: {
+          text: 'Formula SAE',
         },
       },
     ]}
@@ -60,11 +73,12 @@ const metadata = {
   >
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Brandon</h2>
-      <p>Brandon is a senior at Yale College, where he is pursuing a Bachelor of Science in Mechanical Engineering.</p>
+      <p>Brandon graduated from Yale University in 2026 with a Bachelor of Science in Mechanical Engineering.</p>
       <br />
       <p>
-        Brandon is also the Chief Mechanical Engineer of the Yale Bulldogs Racing team and is an active member of the
-        Yale Undergraduate Aerospace Association's rocketry team.
+        At Yale, he was the Chief Mechanical Engineer of the school's Formula SAE team and conducted robotics research
+        at the Faboratory. Brandon is currently working at LeoLabs as a Mechanical Engineer, supporting space technology
+        systems used to track satellites and orbital debris in low Earth orbit.
       </p>
     </Fragment>
 
@@ -82,7 +96,13 @@ const metadata = {
       {
         icon: 'tabler:school',
         callToAction: {
-          text: 'Harvard College',
+          text: 'MIT',
+        },
+      },
+      {
+        icon: 'tabler:school',
+        callToAction: {
+          text: 'Harvard University',
         },
       },
       {
@@ -92,15 +112,9 @@ const metadata = {
         },
       },
       {
-        icon: 'tabler:bookmark',
+        icon: 'tabler:satellite',
         callToAction: {
-          text: 'Mechanical Engineering',
-        },
-      },
-      {
-        icon: 'tabler:bookmarks',
-        callToAction: {
-          text: 'Astrophysics',
+          text: 'HUCSat',
         },
       },
     ]}
@@ -113,13 +127,15 @@ const metadata = {
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Christopher</h2>
       <p>
-        Christopher is a senior at Harvard College, where he is pursuing a Bachelor of Arts in Physics and Mechanical
-        Engineering. He is also pursuing a minor in Astrophysics.
+        Christopher is a first-year doctoral student at the Massachusetts Institute of Technology, where he is pursuing
+        a Doctor of Philosophy in Physics. He previously graduated from Harvard University with a Bachelor of Arts in
+        Physics and Mechanical Engineering and a Master of Arts in Physics.
       </p>
       <br />
       <p>
-        Christopher is also the Chief Engineer of the Harvard Satellite Team, where he is working on a CubeSat project
-        that will be launched into space in 2026.
+        At Harvard, Christopher was the Chief Engineer of the Harvard Satellite Team, where he led development of the
+        Harvard Undergraduate CubeSat, HUCSat, which launched into space in April 2026. At MIT, his research primarily
+        focuses on experimental particle physics.
       </p>
     </Fragment>
 
@@ -142,12 +158,6 @@ const metadata = {
       {
         icon: 'tabler:bookmark',
         callToAction: {
-          text: 'Mechanical Engineering',
-        },
-      },
-      {
-        icon: 'tabler:bookmarks',
-        callToAction: {
           text: 'Computer Science',
         },
       },
@@ -155,6 +165,12 @@ const metadata = {
         icon: 'tabler:bookmarks',
         callToAction: {
           text: 'Robotics',
+        },
+      },
+      {
+        icon: 'tabler:briefcase',
+        callToAction: {
+          text: 'Budbreak Innovations',
         },
       },
     ]}
@@ -167,13 +183,14 @@ const metadata = {
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Gavin</h2>
       <p>
-        Gavin is a junior at Cornell University, where he is pursuing a Bachelor of Science in Mechanical Engineering.
-        He is also pursuing minors in Computer Science and Robotics.
+        Gavin is a senior at Cornell University, where he is pursuing a Bachelor of Science in Computer Science.
+        He is also pursuing a minor in Robotics.
       </p>
       <br />
       <p>
-        Gavin is also a current member of Cornell's EmPRISE Labs for Assistive Robotics, where he is working on a
-        project to improve the quality of life of people with mobility limitations.
+        Gavin is currently interning at Budbreak Innovations as a Full Stack Robotics Engineering Intern. Budbreak is
+        an agtech company building AI-powered crop scouting robots for vineyards and specialty crop fields, and Gavin
+        develops the perception and data pipeline behind the company's field robots.
       </p>
     </Fragment>
 
@@ -186,7 +203,7 @@ const metadata = {
   <Content
     id="handsome"
     isReversed
-    columns={3}
+    columns={4}
     items={[
       {
         icon: 'tabler:school',
@@ -197,13 +214,19 @@ const metadata = {
       {
         icon: 'tabler:bookmark',
         callToAction: {
-          text: 'Biomedical Engineering',
+          text: 'Mechanical Engineering',
         },
       },
       {
         icon: 'tabler:bookmarks',
         callToAction: {
           text: 'Computer Science',
+        },
+      },
+      {
+        icon: 'tabler:briefcase',
+        callToAction: {
+          text: 'Joby Aviation',
         },
       },
     ]}
@@ -216,13 +239,14 @@ const metadata = {
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Handsome</h2>
       <p>
-        Handsome is a junior at Columbia University, where he is pursuing a Bachelor of Science in Biomedical
+        Handsome is a senior at Columbia University, where he is pursuing a Bachelor of Science in Mechanical
         Engineering. He is also pursuing a minor in Computer Science.
       </p>
       <br />
       <p>
-        Before transferring to Columbia University, Handsome was also a member of RIT's Vex U Robotics team, where he
-        placed as a division finalist in the 2024 Vex U World Championship.
+        Handsome is currently interning at Joby Aviation as a Technical Project Manager for Flight Test Instrumentation.
+        Joby Aviation designs and manufactures all-electric vertical takeoff and landing aircraft for fast, quiet, and
+        sustainable air transportation.
       </p>
     </Fragment>
 
@@ -234,7 +258,7 @@ const metadata = {
   <!-- James Content ******************* -->
   <Content
     id="james"
-    columns={2}
+    columns={4}
     items={[
       {
         icon: 'tabler:school',
@@ -248,6 +272,18 @@ const metadata = {
           text: 'Mechanical Engineering',
         },
       },
+      {
+        icon: 'tabler:briefcase',
+        callToAction: {
+          text: 'Anduril Industries',
+        },
+      },
+      {
+        icon: 'tabler:tools',
+        callToAction: {
+          text: 'Combat Robotics',
+        },
+      },
     ]}
     image={{
       src: '~/assets/images/james.jpg',
@@ -258,12 +294,13 @@ const metadata = {
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">James</h2>
       <p>
-        James is a senior at Cornell University, where he is pursuing a Bachelor of Science in Mechanical Engineering.
+        James graduated from Cornell University in 2026 with a Bachelor of Science in Mechanical Engineering. In the
+        coming fall semester, he will complete his master's degree in Mechanical Engineering at Cornell.
       </p>
       <br />
       <p>
-        James is also a Kinetic Subteam Co-Lead of the Combat Robotics at Cornell Project Team, where he designs and
-        builds combat robots to compete in the National Havoc Robot League competition.
+        During his senior year, James ran the Combat Robotics at Cornell project team as one of the Full Team Co-Leads.
+        James is currently interning at Anduril Industries, a rapidly growing American defense technology company.
       </p>
     </Fragment>
 

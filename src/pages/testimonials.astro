@@ -1,0 +1,121 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Testimonials',
+  description:
+    'Read client outcomes and testimonials from Long Island Ivy Insights and Consulting, including college advising, essay support, SAT tutoring, and AP exam tutoring results.',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText
+    tagline="Testimonials"
+    title="Real student outcomes."
+    subtitle="See how Long Island Ivy Insights and Consulting supports students through college strategy, essays, testing, and academic preparation."
+    callToAction={{
+      text: 'Start Your Plan',
+      href: '/contact',
+      icon: 'tabler:mail',
+    }}
+  />
+
+  <Testimonials
+    title="Ivan C."
+    subtitle="Ivan worked with our team across AP Exam Tutoring, SAT Tutoring, College Essay Workshops, and General Advising."
+    testimonials={[
+      {
+        title: 'Accepted to top engineering and technology programs',
+        testimonial:
+          'I am very glad Handsome gave me the idea to build my own project, which I felt played a key part in being accepted to CMU. The SAT tutoring also worked better than any other tutors or courses I have taken in the past.',
+        name: 'Ivan C.',
+        job: 'Accepted to Carnegie Mellon, Georgia Tech, UIUC, UC Irvine, UW-Madison, and NYU',
+        image: {
+          src: '~/assets/images/ivan_c.jpg',
+          alt: 'Ivan C.',
+        },
+      },
+    ]}
+  />
+
+  <Features2
+    title="How We Helped"
+    subtitle="Ivan's outcome reflects a mix of academic preparation, application strategy, and project-based positioning."
+    columns={3}
+    items={[
+      {
+        title: 'Application Strategy',
+        description:
+          'We helped Ivan shape a school list and application approach around his goals, strengths, and target programs.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Project Positioning',
+        description:
+          'Hands-on project guidance helped Ivan present a stronger technical profile for competitive engineering programs.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Testing Support',
+        description:
+          'SAT tutoring gave Ivan clearer direction and more effective preparation than prior tutoring and test-prep courses.',
+        icon: 'tabler:chart-line',
+      },
+    ]}
+  />
+
+  <Features2
+    title="Accepted Schools"
+    subtitle="Ivan gave us permission to advertise these outcomes."
+    columns={3}
+    items={[
+      {
+        title: 'Carnegie Mellon University',
+        description: "One of Ivan's top choices.",
+        icon: 'tabler:award',
+      },
+      {
+        title: 'Georgia Tech',
+        description: 'A leading public research university for engineering and technology.',
+        icon: 'tabler:award',
+      },
+      {
+        title: 'UIUC',
+        description: 'University of Illinois Urbana-Champaign.',
+        icon: 'tabler:award',
+      },
+      {
+        title: 'UC Irvine',
+        description: 'University of California, Irvine.',
+        icon: 'tabler:award',
+      },
+      {
+        title: 'UW-Madison',
+        description: 'University of Wisconsin-Madison.',
+        icon: 'tabler:award',
+      },
+      {
+        title: 'NYU',
+        description: 'New York University.',
+        icon: 'tabler:award',
+      },
+    ]}
+  />
+
+  <CallToAction
+    title="Ready to build your application strategy?"
+    subtitle="Outcomes vary and admissions results are never guaranteed, but thoughtful planning, strong writing, and focused preparation can help students present their best work."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact Us',
+        href: '/contact',
+        icon: 'tabler:mail',
+      },
+    ]}
+  />
+</Layout>
